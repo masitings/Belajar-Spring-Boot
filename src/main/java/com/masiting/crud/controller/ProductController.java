@@ -37,11 +37,11 @@ public class ProductController {
         return service.getProductById(id);
     }
 
-    @GetMapping("/product/{name}")
-    public Product findProductByName(@PathVariable String name)
-    {
-        return service.getProductByName(name);
-    }
+//    @GetMapping("/product/{name}")
+//    public Product findProductByName(@PathVariable String name)
+//    {
+//        return service.getProductByName(name);
+//    }
 
     @PutMapping("/update-product")
     public Product updateProduct(@RequestBody Product product)
